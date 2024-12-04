@@ -1,24 +1,10 @@
-// #region required-template
-import './reset.css';
-import './style.css';
+import {exponent} from './exponents.js'
+// console.log( exponent(3,4))
 
-// eslint-disable-next-line no-unused-vars
-const testElement = document.createElement('div');
-// #endregion
+import {sumSeriesRecursive,sumSeriesIterative} from './sumseries.js'
 
-// DOM elements
-const domInputs = document.querySelectorAll('input');
-/** @type {Array.<HTMLInputElement>} */
-const [
-  passwordOriginal = document.querySelector('input#password'),
-  passwordToCompare = document.querySelector('input#confirm-password'),
-  email = document.querySelector('input#email'),
-  country = document.querySelector('#country'),
-  zip = document.querySelector('#zip'),
-  form = document.querySelector('form'),
-] = [];
-
-
-export default function capitalize() {
-  
-}
+import {reverse} from './reversestring.js'
+// console.log( sumSeriesIterative(22))
+// console.log( sumSeriesRecursive(22))
+// console.log( reverse('apple'))
+import {palin} from './palindrome.js'
